@@ -66,9 +66,18 @@
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="text-3xl">Area (A) = b X h</p>
+                        <div>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-base" placeholder="base"> 
+                            <span class="ml-2 mr-4">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="parallelogram-height" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="parallelogram-area"></span>cm <sup>2</sup></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -90,9 +99,16 @@
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Pentagon!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Area = 0.5 * p * b</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="Peri">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apo">
+                        </div>
+                        <div>
+                            <p>Area: <span id="pentagon-area">0</span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -117,6 +133,8 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-area.js"></script>
+    <script src="scripts/parallelogram-area.js"></script>
+    <script src="scripts/pentagon-area.js"></script>
 </body>
 
 </html>
