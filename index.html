@@ -118,9 +118,16 @@
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Ellipse!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p>Area = π * a * b</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius" placeholder="major">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius" placeholder="minor">
+                        </div>
+                        <div>
+                            <p>Area: <span id="ellipse-area">0</span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
                         </div>
                     </div>
                 </div>
@@ -135,6 +142,7 @@
     <script src="scripts/rectangle-area.js"></script>
     <script src="scripts/parallelogram-area.js"></script>
     <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
 </body>
 
 </html>
